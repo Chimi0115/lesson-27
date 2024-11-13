@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 3</title>
+    </head>
+    <body>
+        <h2>Evaluate Variables</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <script>
+            var a= 27;
+            var b= 15;
+            var c= 9;
+            document.getElementById("p1").innerHTML="Sum of " +a+ " and " +b+ " is " +eval("a+b");
+            document.getElementById("p2").innerHTML = "Difference of " + a + " and " + b + " is " + eval("a-b");
+            document.getElementById("p3").innerHTML = "Product of " + a + " and " + b + " is " + eval("a*b");
+            document.getElementById("p4").innerHTML = "Result of expression (a*b)/c+c is " + eval("(a * b) / c + c");
+            document.getElementById("p5").innerHTML = "Quotient of " + a + " and " + c + " is " + eval("a/c");
+        </script>
+    </body>
+</html>
