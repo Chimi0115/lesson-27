@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 2</title>
+    </head>
+    <body>
+        <h2>Map an Array</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            function prod(a){
+                return a*10;
+            }
+            var num=[1,9,15,27];
+            document.getElementById("p1").innerHTML="Original Array is " +num;
+            var newarr=num.map(prod);
+            document.getElementById("p2").innerHTML="Mapped array is " +newarr;
+        </script>
+    </body>
+</html>
