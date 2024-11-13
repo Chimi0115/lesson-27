@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 1</title>
+    </head>
+    <body>
+        <h2>Array Sorting</h2>
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="descending()">Descending</button>
+        <button onclick="strsort()">String Sort</button>
+        <button onclick="strreverse()">String reverse</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <script>
+            var num=[1,9,15,27];
+            document.getElementById("p1").innerHTML="Original Array is " +num;
+            function ascending(){
+                document.getElementById("p2").innerHTML=num.sort(function(a,b){return a-b});
+            }
+            function descending() {
+                    document.getElementById("p3").innerHTML = num.sort(function (b, a){return a-b});
+                }
+            var sports=["Football", "Basketball", "Volleyball"];               
+            document.getElementById("p4").innerHTML="Original Array is " +sports;
+            function strsort(){
+                document.getElementById("p5").innerHTML=sports.sort();
+            }
+            function strreverse(){
+                document.getElementById("p6").innerHTML=sports.reverse();
+            }
+        </script>
+    </body>
+</html>
